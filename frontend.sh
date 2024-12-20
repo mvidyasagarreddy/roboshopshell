@@ -13,7 +13,7 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>>/tmp/roboshop.log
 
 echo -e "\e[31mCopy Nginx Reverse Proxy Configuration.\e[0m"
-cp /home/centos/Roboshop-Shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/roboshopshell/roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 
 echo -e "\e[31mStart Nginx\e[0m"
