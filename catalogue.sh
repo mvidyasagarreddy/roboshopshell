@@ -22,7 +22,7 @@ unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
 echo -e "\e[31mDownload the NodeJs dependencies.\e[0m"
 npm install 
 
-echo -e "\e[31mStart Catalogue service\e[0m"
+echo -e "\e[31mStart catalogue service\e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
 systemctl enable catalogue &>>/tmp/roboshop.log
 systemctl restart catalogue &>>/tmp/roboshop.log

@@ -1,13 +1,13 @@
-echo -e "\e[31mDisable MySQL 8 version\e[0m"
+echo -e "\e[31mDisable mysql 8 version\e[0m"
 dnf module disable mysql -y &>>/tmp/roboshop.log
 
 echo -e "\e[31mCopy Mysql repo file\e[0m"
 cp /home/centos/roboshopshell/mysql.repo /etc/yum.repos.d/mysql.repo &>>/tmp/roboshop.log
 
-echo -e "\e[31mInstall MySQL Server\e[0m"
+echo -e "\e[31mInstall mysql Server\e[0m"
 dnf install mysql-community-server -y &>>/tmp/roboshop.log
 
-echo -e "\e[31mStart MySQL Service\e[0m"
+echo -e "\e[31mStart mysql Service\e[0m"
 systemctl enable mysqld &>>/tmp/roboshop.log
 systemctl restart mysqld &>>/tmp/roboshop.log
 
